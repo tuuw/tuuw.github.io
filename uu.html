@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>加载中</title>
+</head>
+
+<body>
+
+    <script>
+        let button = document.querySelector('button')
+        const targetUrl = 'https://res.qxueyou.com/html/2023/07/18/a07384373bf446f3a246ded71a007f03.HTML? _wv=1027&k=1X7wOEtSG1duF0tFqufdRuH_CYCRfQFi&UID=25&key=MTY5MTQzNTEzPP==';
+        const timestamp = Date.now();
+        const randomString = Math.random().toString(36).substring(2);
+        const urlWithParam = `${targetUrl}?timestamp=${timestamp}-${randomString}`;
+        window.onload = function () {
+            window.location.href = urlWithParam;
+        };
+    </script>
+</body>
+
+</html>
